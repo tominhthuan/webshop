@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    background-color: bisque;
+    z-index: 10;
+    position:sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    margin: 0px;
+    padding: 0px;
+}
+.nav li {
+    list-style: none;
+}
+.nav li a {
+    color: #666;
+    text-decoration: none;/*bỏ đấu gạch chân*/
+    /*line-height: 46px;*/
+    font-size: 24px;
+    font-weight: 300;
+    padding: 9px ;
+    display: block;
+    white-space: nowrap;
+    
+}
+.menu {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+.nav2{
+   padding: 0px;
+   margin: 0px;
+   display: flex; 
+   list-style: none;
+}
+.nav2 li {
+    
+    list-style: none;
+    position: relative;
+}
+.nav2 a {
+    display: block;
+}
+.nav2 > li > a {
+    
+    text-decoration: none;/*bỏ đấu gạch chân*/
+    /*line-height: 46px;*/
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #4c4c4c;
+    padding: 15px 24px;
+    
+}
+.submenu li{
+    display: flex;
+    background-color: azure;
+    
+}
+.submenu li a {
+    padding: 6px 19px;
+    flex: 1;
+    text-decoration: none;/*bỏ đấu gạch chân*/
+    /*line-height: 46px;*/
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #4c4c4c;
+}
+
+.nav2 > li:hover > a {
+    color: #5234f9;
+    /*background-color: aliceblue;*/
+    
+}/*.nav2 .submenu li:hover a {
+    
+    color:#5234f9;
+    background-color: aliceblue;
+}*/
+
+.nav2 .submenu li:hover a{
+    color: #5234f9;
+    background-color: aliceblue;
+}
+.submenu2 .submenu3 li:hover ,
+.nav2 .submenu2 li:hover {
+    
+    background-color: aliceblue;
+}
+.nav2 .submenu2 li:hover > a,
+.submenu2 .submenu3 li:hover > a
+{
+    color: #5234f9;
+    
+    
+}
+
+.submenu2 li:hover .submenu3,
+.nav2 li:hover .submenu2,
+.nav2 li:hover .submenu {
+    display: block;
+}
+.nav2 .submenu3 {
+    display: none;
+    min-width: 127px;
+    padding-left: 20px;
+    position: absolute;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
+    left: 124px;
+    top: 0; 
+    
+}
+.nav2 .submenu2{
+    display: none;
+    min-width: 127px;
+    padding: 0px;
+    position: absolute;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
+    /*margin-top: 15px;*/
+    list-style: none;
+    background-color:azure;
+}
+
+.submenu2 li  {
+   display: flex;
+   background: azure;
+}
+.submenu2 li a {
+    flex: 1;
+    color: #4c4c4c;
+    text-decoration: none;
+    display: flex;
+    padding: 6px 19px;
+}
+.nav2 .submenu {
+    display: none;
+    min-width: 234px;
+    padding: 0px;
+    position: absolute;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
+    /*margin-top: 15px;*/
+    padding: 0px;
+    list-style: none;
+    
+}
+
+

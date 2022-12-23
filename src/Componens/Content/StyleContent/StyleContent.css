@@ -42,7 +42,7 @@ h1{
 }
 .text-content p{
     font-weight: 400;
-    margin-bottom: 35px;
+    margin: 35px;
 }
 .btn{
     margin-right: 8px;
@@ -178,7 +178,6 @@ h1{
 .text-content3{
     position: absolute;
     bottom: 120px;
-    color: aqua;
     left: 3%;
     text-align: center;
     display: flex;
@@ -193,6 +192,7 @@ h1{
 }
 
 h4 {
+    color: #ffffff;
     font-size: 60px;
     line-height: 64px;
     font-weight: 400;
@@ -241,6 +241,7 @@ h4 {
     margin-bottom: 32px;
 }
 .mb34 p{
+    color: #0e1015;
     font-weight: 400;
     margin-bottom: 24px;
     margin-top: 0;

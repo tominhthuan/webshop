@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 class Header extends Component {
     render(){
         return (
@@ -13,13 +14,13 @@ class Header extends Component {
                 <div className='menu'>
                     <ul className='nav2'>
                         <li>
-                            <a href='/' className='home'> HOME </a>
+                            <Link to={'/'} className='home'> HOME </Link>
                         </li>
                         <li>
-                            <a href='/blog/' className='blog'>BLOG</a>
+                            <Link to={'/blog'} className='blog'>BLOG</Link>
                         </li>
                         <li>
-                            <a href='/portfolio' className='portfolio'>PORTFOLIO</a>
+                            <Link to={'/portfolio'} className='portfolio'>PORTFOLIO</Link>
                         </li>
                         <li>
                             <a href='huanido' className='aboutthetests'>ABOUTTHETESTS</a>

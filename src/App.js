@@ -3,34 +3,35 @@ import React, { Component } from 'react'
 import Header from './Componens/Header/Header';
 import Content from './Componens/Content/Content';
 
-import {BrowserRouter as Router,Route , Switch} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import './Componens/Header/Styles/Styles.css'
 import './Componens/Content/StyleContent/StyleContent.css'
 import HOME from './Componens/HOME';
-import BLOG from './Componens/BLOG';
+import BLOG from './Componens/Content/BLOG';
 import PORTFOLIO from './Componens/PORTFOLIO';
 
 class App extends Component {
-  render(){
+  render() {
     return (
-      
-      <Router>
+      <React.Fragment>
         <div className="App">
-          <Header>
-              <Route exact path='/'  component={HOME} />
-              <Route path="/blog/" component={BLOG} />
-              <Route path="/portfolio" component={PORTFOLIO} />
-          </Header>
-            
+          <Header/>
+          <Routes>
+            <Route path='/'>
+              <Route index element={<Content/>} />
+              <Route path="/blog" element={<BLOG />} />
+              <Route path="/portfolio" element={<PORTFOLIO/>} />
+            </Route>
+          </Routes>
         </div>
-        <Content/>
-      </Router>
-    
+      </React.Fragment>
+
+
     );
   }
-  
+
 }
 
 export default App;

@@ -383,7 +383,8 @@ h4 {
     padding-left: 15px;
 }
 
-.article12 {
+/*.article12*/
+.secondary {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -554,8 +555,9 @@ h4 {
 }
 .search-2 {
     margin-bottom: 48px;
-}
-.top-posts-4 {
+}      
+h12 {
+    display: flex;
     font-size: 22px;
     line-height: 24px;
     color: #001c28;

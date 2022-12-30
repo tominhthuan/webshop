@@ -13,6 +13,9 @@
 p {
     color: red;
 }
+a {
+    color:#745cf9;
+}
 
 .contentimg,
 .img3 {
@@ -359,6 +362,9 @@ h4 {
     margin-right: auto;
     margin-left: auto;
 }
+.container12 {
+    display: flex;
+}
 
 @media (min-width: 992px) {
     .primary {
@@ -388,7 +394,7 @@ h4 {
 }
 .s {
     display: flex;
-}
+} 
 .contentimg12 {
     max-width: 100%;
     height: auto;
@@ -442,6 +448,7 @@ h4 {
     display: flex;
     list-style-type: none;
     margin-left: 0;
+    margin-bottom: 12px;
 }
 .post-meta li {
     position: relative;
@@ -449,7 +456,7 @@ h4 {
     margin-right: 24px;
     
 }
-.post-meta > li:before {
+/*.post-meta > li:before {
     content: '';
     height: 12px;
     width: 2px;
@@ -458,8 +465,9 @@ h4 {
     position: absolute;
     bottom: 4px;
     left: -13px;
-}
+}*/
 .post-meta a {
+    /*margin-left: 4px;*/
     color: #745cf9;
     font-weight: 400;
     text-decoration: none;
@@ -470,4 +478,86 @@ h4 {
     list-style-type: none;
     font-size: 14px;
     color:#8c979e;
+}
+.entry-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.entry-content > p {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color:#8c979e;
+}
+.entry-content > p > a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.entry-content .pbtn {
+    display: flex;
+}
+
+
+.post-meta2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 69px;
+    margin-bottom: 24px;
+}
+.post-meta2 > li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8c979e;
+    line-height: 22px;
+
+}
+.post-meta2 > li > code {
+    padding: 2px 4px;
+    font-size: 15px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    line-height: 24px;
+}
+
+.post-meta2 > li >  a {
+    color: #745cf9;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    
+}
+.primary2 {
+    display: flex;
+}
+.search-2 .search > input {
+    border-radius: 4px;
+    padding: 10px 4px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+/*.search {
+    padding: 8px;
+    display: inline-block;
+    width: 100%;
+    line-height: 50px;
+}*/
+.search-2 .search {
+    /*padding: 0;
+    position: relative;*/
+    display: flex;
+}
+.search-2 {
+    margin-bottom: 48px;
+}
+.top-posts-4 {
+    font-size: 22px;
+    line-height: 24px;
+    color: #001c28;
+    margin-bottom: 25px;
 }

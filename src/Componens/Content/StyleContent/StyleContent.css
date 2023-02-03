@@ -317,7 +317,9 @@ h4 {
 .section11 {
     background-color: #f5f5f5;
     height: 225px;
-    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .h11 {
@@ -357,10 +359,10 @@ h4 {
 }
 .container12,
 .container11 {
-    padding-right: 15px;
+    /*padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto;*/
 }
 .container12 {
     display: flex;
@@ -375,15 +377,14 @@ h4 {
     padding: 96px 0;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .primary {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
 }
-
-/*.article12*/
+.article12,
 .secondary {
     position: relative;
     min-height: 1px;
@@ -400,12 +401,12 @@ h4 {
     max-width: 100%;
     height: auto;
 }
+.shapely-category > a:hover{
+    color: #5d47d7;
+}
 .shapely-category{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 900;
+    
 }
 .shapely-category{
 
@@ -421,21 +422,21 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
     color: #bebebe;
-    padding: 18px 0px;
+    /*padding: 18px 0px;width: 100%;*/
 }
 .post-title{
     display: flex;
-    font-size: 30px;
+    /*font-size: 30px;*/
     margin-top: 25px;
     margin-bottom: 10px;
 }
 .post-title > a{
+    line-height: normal;
     font-size: 40px;
     font-weight: 300;
     text-decoration: none;
@@ -453,8 +454,6 @@ h4 {
 }
 .post-meta li {
     position: relative;
-    float: left;
-    margin-right: 24px;
     
 }
 /*.post-meta > li:before {
@@ -562,4 +561,45 @@ h12 {
     line-height: 24px;
     color: #001c28;
     margin-bottom: 25px;
+}
+.imgMin{
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+.widgets {
+    list-style: none;
+    margin-bottom: 48px;
+}
+.widgets > li {
+    display: flex;
+    margin-bottom: 8px;
+}
+.widget{
+    list-style: none;
+    margin-top: 20px;
+}
+.widget > li{
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.widget > li >a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #8c979e;
+    font-weight: 400;
+}
+.widget > li > a:hover{
+    color: #5234f9;
+}
+.WidgetsList a{
+    font-weight: 600;
+    margin-left: 39px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.WidgetsList a:hover{
+    color: #5234f9;
 }

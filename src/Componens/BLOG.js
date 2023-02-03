@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
 
+//componet
+import ArticleComponent from './ArticleComponent';
+import HorizontalComponent from './HorizontalComponent';
+import PostsComponent from './PostsComponent';
+
+
 class BLOG extends Component {
     render() {
         return (
@@ -61,208 +67,175 @@ class BLOG extends Component {
                                 </div>
                             </article>
                             <div className='primary2'>
-                                <article className='article12'>
-                                    <header className='header12'>
-                                        <a className='s' href='/'>
-                                            <img className='contentimg12' src='../assets/Images/slider3.jpg' alt='thuan'></img>
-                                        </a>
-                                        <span className='shapely-category'>
-                                            <a href="thuan"> News </a>
-                                        </span>
-                                    </header>
-                                    <div className='entry-content'>
-                                        <h12 className='post-title'>
-                                            <a href='/' className='post-content'>Template: More Tag</a>
-                                        </h12>
-                                        <div>
-                                            <ul className='post-meta'>
-                                                <li>
-                                                    <span className='posted-on'>March 15, 2016October 21, 2020</span>
-                                                </li>
-                                                <li>
-                                                    <span className='by'>by
-                                                        <a href='/'> Aigars</a>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p>
-                                            This content is before the
-                                            <a href='/'> more tag</a>
-                                            .
-                                        </p>
-                                        <p>Right after this sentence should be a “continue reading” button of some sort.</p>
-                                        <p className='pbtn'><a href='/' className='btn'>Read more</a></p>
-                                    </div>
-                                </article>
-                                <article className='article12'>
-                                    <header className='header12'>
-                                        <a className='s' href='/'>
-                                            <img className='contentimg12' src='../assets/Images/slider4.jpg' alt='thuan'></img>
-                                        </a>
-                                        <span className='shapely-category'>
-                                            <a href="thuan"> News </a>
-                                        </span>
-                                    </header>
-                                    <div className='entry-content'>
-                                        <h12 className='post-title'>
-                                            <a href='/' className='post-content'>Hello world!</a>
-                                        </h12>
-                                        <div>
-                                            <ul className='post-meta'>
-                                                <li>
-                                                    <span className='posted-on'>February 23, 2016October 21, 2020</span>
-                                                </li>
-                                                <li>
-                                                    <span className='by'>by
-                                                        <a href='/'> Aigars</a>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p>
-                                            Welcome to
-                                            <a href='/'> colorlib.com</a>
-                                            . This is your first post. Edit or delete it, then start blogging!
-                                        </p>
-                                    </div>
-                                </article>
+                                <ArticleComponent
+                                    News={'News'}
+                                    urlImg={'../assets/Images/slider3.jpg'}
+                                    title={'Template: More Tag'}
+                                    date={'March 15, 2016October 21, 2020'}
+                                    author={'Aigars'}
+                                    content={(
+                                        <React.Fragment>
+                                            <p>
+                                                This content is before the
+                                                <a href='/'> more tag</a>
+                                                .
+                                            </p>
+                                            <p>Right after this sentence should be a “continue reading” button of some sort.</p>
+                                        </React.Fragment>
+                                    )}
+                                    isReadmore={true}
+                                />
+                                <ArticleComponent
+                                    News={'News'}
+                                    urlImg={'../assets/Images/slider4.jpg'}
+                                    title={'Hello world!'}
+                                    date={'February 23, 2016October 21, 2020'}
+                                    author={'Aigars'}
+                                    content={(
+                                        <React.Fragment>
+                                            <p>
+                                                Welcome to
+                                                <a href='/'> colorlib.com</a>
+                                                . This is your first post. Edit or delete it, then start blogging!
+                                            </p>
+                                        </React.Fragment>
+                                    )}
+                                    isReadmore={false}
+                                />
                             </div>
                             <div className='primary2'>
-                                <article className='article12'>
-                                    <header className='header12'>
-                                        <a className='s' href='/'>
-                                            <img className='contentimg12' src='../assets/Images/slider5.jpg' alt='thuan'></img>
-                                        </a>
-                                        <span className='shapely-category'>
-                                            <a href="thuan"> Markup </a>
-                                        </span>
-                                    </header>
-                                    <div className='entry-content'>
-                                        <h12 className='post-title'>
-                                            <a href='/' className='post-content'>Markup: HTML Tags and Formatting</a>
-                                        </h12>
-                                        <div>
-                                            <ul className='post-meta'>
-                                                <li>
-                                                    <span className='posted-on'>January 11, 2016October 21, 2020</span>
-                                                </li>
-                                                <li>
-                                                    <span className='by'>by
-                                                        <a href='/'> Aigars</a>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                <ArticleComponent
+                                    News={'Markup'}
+                                    urlImg={'../assets/Images/slider5.jpg'}
+                                    title={'Markup: HTML Tags and Formatting'}
+                                    date={'January 11, 2016October 21, 2020'}
+                                    author={'Aigars'}
+                                    content={(
                                         <p>
                                             HTML Tags and Formatting
                                         </p>
-                                        <p className='pbtn'><a href='/' className='btn'>Read more</a></p>
-                                    </div>
-                                </article>
-                                <article className='article12'>
-                                    <header className='header12'>
-                                        <a className='s' href='/'>
-                                            <img className='contentimg12' src='../assets/Images/slider5.jpg' alt='thuan'></img>
-                                        </a>
-                                        <span className='shapely-category'>
-                                            <a href="thuan"> Markup </a>
-                                        </span>
-                                    </header>
-                                    <div className='entry-content'>
-                                        <h12 className='post-title'>
-                                            <a href='/' className='post-content'>Markup: Image Alignment</a>
-                                        </h12>
-                                        <div>
-                                            <ul className='post-meta'>
-                                                <li>
-                                                    <span className='posted-on'>January 10, 2016October 21, 2020</span>
-                                                </li>
-                                                <li>
-                                                    <span className='by'>by
-                                                        <a href='/'> Aigars</a>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    )}
+                                    isReadmore={true}
+                                />
+                                <ArticleComponent
+                                    News={'Markup'}
+                                    urlImg={'../assets/Images/slider5.jpg'}
+                                    title={'Markup: Image Alignment'}
+                                    date={'January 10, 2016October 21, 2020'}
+                                    author={'Aigars'}
+                                    content={(
                                         <p>
                                             Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let’s get started.
                                         </p>
-                                        <p className='pbtn'><a href='/' className='btn'>Read more</a></p>
-                                    </div>
-                                </article>
+                                    )}
+                                    isReadmore={true}
+                                />
                             </div>
                             <div className='primary2'>
-                                <article className='article12'>
-                                    <header className='header12'>
-                                        <a className='s' href='/'>
-                                            <img className='contentimg12' src='../assets/Images/slider6.jpg' alt='thuan'></img>
-                                        </a>
-                                        <span className='shapely-category'>
-                                            <a href="thuan"> Markup </a>
-                                        </span>
-                                    </header>
-                                    <div className='entry-content'>
-                                        <h12 className='post-title'>
-                                            <a href='/' className='post-content'>Markup: Text Alignment</a>
-                                        </h12>
-                                        <div>
-                                            <ul className='post-meta'>
-                                                <li>
-                                                    <span className='posted-on'>January 09, 2016October 21, 2020</span>
-                                                </li>
-                                                <li>
-                                                    <span className='by'>by
-                                                        <a href='/'> Aigars</a>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h13>Default</h13>
-                                        <p>
-                                            This is a paragraph. It should not have any alignment of any kind.
-                                            It should just flow like you would normally expect. Nothing fancy.
-                                            Just straight up text, free flowing, with love.
-                                        </p>
-                                        <p>
-                                            Completely neutral and not picking a side or sitting on the fence.
-                                            It just is. It just freaking is. It likes where it is. It does not feel compelled to pick a side. Leave him be.
-                                            It will just be better that way. Trust me.
-                                        </p>
-                                        <p className='pbtn'><a href='/' className='btn'>Read more</a></p>
-                                    </div>
-                                </article>
-                                <article className='article12'>
-                                    <header className='header12'>
-                                        <a className='s' href='/'>
-                                            <img className='contentimg12' src='../assets/Images/slider7.jpg' alt='thuan'></img>
-                                        </a>
-                                        <span className='shapely-category'>
-                                            <a href="thuan"> Markup </a>
-                                        </span>
-                                    </header>
-                                    <div className='entry-content'>
-                                        <h12 className='post-title'>
-                                            <a href='/' className='post-content'>Markup: Title With Special Characters</a>
-                                        </h12>
-                                        <div>
-                                            <ul className='post-meta'>
-                                                <li>
-                                                    <span className='posted-on'>January 5, 2016October 21, 2020</span>
-                                                </li>
-                                                <li>
-                                                    <span className='by'>by
-                                                        <a href='/'> Aigars</a>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                <ArticleComponent
+                                    News={'Markup'}
+                                    urlImg={'../assets/Images/slider6.jpg'}
+                                    title={'Markup: Text Alignment'}
+                                    date={'January 09, 2016October 21, 2020'}
+                                    author={'Aigars'}
+                                    content={(
+                                        <React.Fragment>
+                                            <h13>Default</h13>
+                                            <p>
+                                                This is a paragraph. It should not have any alignment of any kind.
+                                                It should just flow like you would normally expect. Nothing fancy.
+                                                Just straight up text, free flowing, with love.
+                                            </p>
+                                            <p>
+                                                Completely neutral and not picking a side or sitting on the fence.
+                                                It just is. It just freaking is. It likes where it is. It does not feel compelled to pick a side. Leave him be.
+                                                It will just be better that way. Trust me.
+                                            </p>
+                                        </React.Fragment>
+                                    )}
+                                    isReadmore={true}
+                                />
+                                <ArticleComponent
+                                    News={'Markup'}
+                                    urlImg={'../assets/Images/slider7.jpg'}
+                                    title={'Markup: Title With Special Characters'}
+                                    date={'January 05, 2016October 21, 2020'}
+                                    author={'Aigars'}
+                                    content={(
                                         <p>
                                             Putting special characters in the title should have no adverse effect on the layout or functionality.
                                         </p>
-                                        <p className='pbtn'><a href='/' className='btn'>Read more</a></p>
-                                    </div>
-                                </article>
+                                    )}
+                                    isReadmore={true}
+                                />
+
+                            </div>
+                            <div className='primary2'>
+                                <ArticleComponent
+                                    News={'Markup'}
+                                    urlImg={'../assets/Images/slider12.jpg'}
+                                    title={'Markup: Title With Markup'}
+                                    date={'January 05, 2016October 21, 2020'}
+                                    author={'Aigars'}
+                                    isReadmore={true}
+                                />
+                                <ArticleComponent
+                                    News={'Edge'}
+                                    urlImg={'../assets/Images/slider13.jpg'}
+                                    title={'Edge Case: Nested And Mixed Lists'}
+                                    date={'May 15, 2015October 21, 2020'}
+                                    author={'Aigars'}
+                                    content={(
+                                        <p>
+                                            Nested and mixed lists are an interesting beast. It’s a corner case to make sure that
+                                        </p>
+                                    )}
+                                    isReadmore={true}
+                                />
+                            </div>
+                            <div className='primary2'>
+                                <ArticleComponent
+                                    News={'News'}
+                                    urlImg={'../assets/Images/slider14.jpg'}
+                                    title={'Template: Featured Image (Vertical)'}
+                                    date={'March 15, 2015October 21, 2020'}
+                                    author={'Aigars'}
+                                    content={(
+                                        <React.Fragment>
+                                            <p>
+                                                This post should display a 
+                                                <a href='/'> featured image</a>
+                                                , if the theme
+                                                <a href='/'> supports it</a>
+                                                .
+                                            </p>
+                                            <p>Non-square images can provide some unique styling issues.</p>
+                                            <p>This post tests a vertical featured image.</p>
+                                        </React.Fragment>
+                                    )}
+                                    isReadmore={false}
+                                />
+                                <ArticleComponent
+                                    News={'News'}
+                                    urlImg={'../assets/Images/slider15.jpg'}
+                                    title={'Template: Featured Image (Horizontal)'}
+                                    date={'March 15, 2015October 21, 2020'}
+                                    author={'Aigars'}
+                                    content={(
+                                        <React.Fragment>
+                                            <p>
+                                                This post should display a 
+                                                <a href='/'> featured image</a>
+                                                , if the theme
+                                                <a href='/'> supports it</a>
+                                                .
+                                            </p>
+                                            <p>Non-square images can provide some unique styling issues.</p>
+                                            <p>This post tests a vertical featured image.</p>
+                                        </React.Fragment>
+                                    )}
+                                    isReadmore={false}
+                                />
                             </div>
                         </div>
                         <aside className='secondary'>
@@ -273,39 +246,77 @@ class BLOG extends Component {
                             </div>
                             <div className='top-posts-4'>
                                 <h12>Top Posts</h12>
-                                <ul>
-                                    <li>
-                                        <a href='/'>
-                                            <img width='40px' height='40px' src='../assets/Images/slider11.jpg' alt='thuan'></img>
-                                        </a>
-                                    </li>
-                                    <li>
-                                    <a href='/'>
-                                            <img width='40px' height='40px' src='../assets/Images/slider3.jpg' alt='thuan'></img>
-                                        </a>
-                                    </li>
-                                    <li>
-                                    <a href='/'>
-                                            <img width='40px' height='40px' src='../assets/Images/slider7.jpg' alt='thuan'></img>
-                                        </a>
-                                    </li>
-                                    <li>
-                                    <a href='/'>
-                                            <img width='40px' height='40px' src='../assets/Images/slider5.jpg' alt='thuan'></img>
-                                        </a>
-                                    </li>
-                                    <li>
-                                    <a href='/'>
-                                            <img width='40px' height='40px' src='../assets/Images/slider4.jpg' alt='thuan'></img>
-                                        </a>
-                                    </li>
-                                    <li>
-                                    <a href='/'>
-                                            <img width='40px' height='40px' src='../assets/Images/slider8.webp' alt='thuan'></img>
-                                        </a>
-                                    </li>
+                                <ul className='widgets'>
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider11.jpg'}
+                                        News={'Template: Featured Image (Horizontal)'}
+                                    />
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider3.jpg'}
+                                        News={'Hello world!'}
+                                    />
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider7.jpg'}
+                                        News={'Template: Featured Image (Vertical)'}
+                                    />
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider5.jpg'}
+                                        News={'Template: Sticky'}
+                                    />
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider4.jpg'}
+                                        News={'Template: Excerpt (Defined)'}
+                                    />
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider8.webp'}
+                                        News={'Markup: HTML Tags and Formatting'}
+                                    />
                                 </ul>
                             </div>
+                            <div className='top-posts-4'>
+                                <h12>Recent Posts</h12>
+                                <ul className='widget'>
+                                   <PostsComponent
+                                        News={'Template: More Tag'}
+                                   />
+                                   <PostsComponent
+                                        News={'Hello world!'}
+                                   />
+                                   <PostsComponent
+                                        News={'Markup: HTML Tags and Formatting'}
+                                   />
+                                   <PostsComponent
+                                        News={'Markup: Image Alignment'}
+                                   />
+                                   <PostsComponent
+                                        News={'Markup: Text Alignment'}
+                                   />
+                                </ul>
+                            </div>
+                            <div className='top-posts-4'>
+                                <h12>Categories</h12>
+                                <ul className='widget'>
+                                   <PostsComponent
+                                        News={'Edge Case'}
+                                   />
+                                   <PostsComponent
+                                        News={'Markup'}
+                                   />
+                                   <PostsComponent
+                                        News={'Markup'}
+                                   />
+                                   <PostsComponent
+                                        News={'News'}
+                                   />
+                                   <PostsComponent
+                                        News={'Post Formats'}
+                                   />
+                                   <PostsComponent
+                                        News={'Template'}
+                                   />
+                                </ul>
+                            </div>
+                            
                         </aside>
                     </div>
                 </section>

@@ -2,7 +2,7 @@ import React from 'react'
 
 class HorizontalComponent extends React.Component {
     render() {
-        const { urlImg, News }=this.props;
+        const { urlImg, News } = this.props;
         return (
             <li>
                 <a href='/'>

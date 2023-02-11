@@ -3,11 +3,59 @@ import React, { Component } from 'react'
 //componet
 import ArticleComponent from './ArticleComponent';
 import HorizontalComponent from './HorizontalComponent';
-import PostsComponent from './PostsComponent';
+
+import MergeComponents from './MergeComponents';
+
+{/* <HorizontalComponent
+                                        urlImg={'../assets/Images/slider11.jpg'}
+                                        News={'Template: Featured Image (Horizontal)'}
+                                    /> */}
+{/* <HorizontalComponent
+                                        urlImg={'../assets/Images/slider3.jpg'}
+                                        News={'Hello world!'}
+                                    />
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider7.jpg'}
+                                        News={'Template: Featured Image (Vertical)'}
+                                    />
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider5.jpg'}
+                                        News={'Template: Sticky'}
+                                    />
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider4.jpg'}
+                                        News={'Template: Excerpt (Defined)'}
+                                    />
+                                    <HorizontalComponent
+                                        urlImg={'../assets/Images/slider8.webp'}
+                                        News={'Markup: HTML Tags and Formatting'}
+                                    /> */}
+const tops = [
+    {
+        imgs: ['slider1', 'slider2', 'slider3'],
+        newss: ['Template: Featured Image (Horizontal)', 'Hello world!','Template: Featured Image (Vertical)','Template: Sticky','Template: Excerpt (Defined)','Markup: HTML Tags and Formatting']
+    },
+    
+];
+
+
+
+
+const blocks = [
+    {
+        title: 'Recent Posts',
+        data: ['Template: More Tag', 'Hello world!', 'Markup: HTML Tags and Formatting', 'Markup: Image Alignment', 'Markup: Text Alignment']
+    },
+    {
+        title: 'Categories',
+        data: ['Edge Case', 'Markup', 'Markup', 'News', 'Post Formats', 'Template']
+    }
+];
 
 
 class BLOG extends Component {
     render() {
+        // console.log(tops[0].imgs[0]);
         return (
             <div>
                 <div className='header-callout'>
@@ -17,8 +65,6 @@ class BLOG extends Component {
                                 <h11 className='h11'>BLOG </h11>
                             </div>
                         </div>
-
-
                     </section>
                 </div>
                 <section className='section12'>
@@ -203,7 +249,7 @@ class BLOG extends Component {
                                     content={(
                                         <React.Fragment>
                                             <p>
-                                                This post should display a 
+                                                This post should display a
                                                 <a href='/'> featured image</a>
                                                 , if the theme
                                                 <a href='/'> supports it</a>
@@ -224,7 +270,7 @@ class BLOG extends Component {
                                     content={(
                                         <React.Fragment>
                                             <p>
-                                                This post should display a 
+                                                This post should display a
                                                 <a href='/'> featured image</a>
                                                 , if the theme
                                                 <a href='/'> supports it</a>
@@ -247,76 +293,28 @@ class BLOG extends Component {
                             <div className='top-posts-4'>
                                 <h12>Top Posts</h12>
                                 <ul className='widgets'>
-                                    <HorizontalComponent
-                                        urlImg={'../assets/Images/slider11.jpg'}
-                                        News={'Template: Featured Image (Horizontal)'}
-                                    />
-                                    <HorizontalComponent
-                                        urlImg={'../assets/Images/slider3.jpg'}
-                                        News={'Hello world!'}
-                                    />
-                                    <HorizontalComponent
-                                        urlImg={'../assets/Images/slider7.jpg'}
-                                        News={'Template: Featured Image (Vertical)'}
-                                    />
-                                    <HorizontalComponent
-                                        urlImg={'../assets/Images/slider5.jpg'}
-                                        News={'Template: Sticky'}
-                                    />
-                                    <HorizontalComponent
-                                        urlImg={'../assets/Images/slider4.jpg'}
-                                        News={'Template: Excerpt (Defined)'}
-                                    />
-                                    <HorizontalComponent
-                                        urlImg={'../assets/Images/slider8.webp'}
-                                        News={'Markup: HTML Tags and Formatting'}
-                                    />
+                                    {tops.map(item => {
+                                        return (
+                                            <HorizontalComponent
+                                                // urlImg={`../assets/Images/${item}.jpg`}
+                                                // News={'Template: Featured Image (Horizontal)'}
+                                                urlImg={item.imgs}
+                                                News={item.newss}
+                                            />
+                                        )
+                                    })}
                                 </ul>
                             </div>
-                            <div className='top-posts-4'>
-                                <h12>Recent Posts</h12>
-                                <ul className='widget'>
-                                   <PostsComponent
-                                        News={'Template: More Tag'}
-                                   />
-                                   <PostsComponent
-                                        News={'Hello world!'}
-                                   />
-                                   <PostsComponent
-                                        News={'Markup: HTML Tags and Formatting'}
-                                   />
-                                   <PostsComponent
-                                        News={'Markup: Image Alignment'}
-                                   />
-                                   <PostsComponent
-                                        News={'Markup: Text Alignment'}
-                                   />
-                                </ul>
-                            </div>
-                            <div className='top-posts-4'>
-                                <h12>Categories</h12>
-                                <ul className='widget'>
-                                   <PostsComponent
-                                        News={'Edge Case'}
-                                   />
-                                   <PostsComponent
-                                        News={'Markup'}
-                                   />
-                                   <PostsComponent
-                                        News={'Markup'}
-                                   />
-                                   <PostsComponent
-                                        News={'News'}
-                                   />
-                                   <PostsComponent
-                                        News={'Post Formats'}
-                                   />
-                                   <PostsComponent
-                                        News={'Template'}
-                                   />
-                                </ul>
-                            </div>
-                            
+                            {
+                                blocks.map((item) => {
+                                    return (
+                                        <MergeComponents
+                                            title={item.title}
+                                            data={item.data}
+                                        />
+                                    );
+                                })
+                            }
                         </aside>
                     </div>
                 </section>

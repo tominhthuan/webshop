@@ -366,6 +366,7 @@ h4 {
 }
 .container12 {
     display: flex;
+    margin: 0 auto;
 }
 
 @media (min-width: 992px) {
@@ -377,17 +378,13 @@ h4 {
     padding: 96px 0;
     position: relative;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
+    
 }
 .primary {
-    position: relative;
-    min-height: 1px;
 }
 .article12,
 .secondary {
-    position: relative;
-    min-height: 1px;
+    
     padding-right: 15px;
     padding-left: 15px;
 }

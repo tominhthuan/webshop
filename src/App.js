@@ -8,7 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import './Componens/Header/Styles/Styles.css'
 import './Componens/Content/StyleContent/StyleContent.css'
-import HOME from './Componens/HOME';
+
 import BLOG from './Componens/BLOG';
 import PORTFOLIO from './Componens/PORTFOLIO';
 

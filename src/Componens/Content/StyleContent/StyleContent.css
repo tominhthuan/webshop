@@ -331,18 +331,23 @@ h4 {
     padding: 0;
 }
 
+/*
 @media (min-width: 768px) {
     .container12,
     .container11 {
         width: 750px;
     }
-}
+}*/
 
-@media (min-width: 992px) {
-    .container12,
-    .container11 {
-        width: 970px;
+@media (max-width: 992px) {
+    .container12
+    {
+        flex-direction: column;
     }
+    .container12 > .primary{
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -599,4 +604,21 @@ h12 {
 }
 .WidgetsList a:hover{
     color: #5234f9;
+}
+/* PORTFOLIO */
+.images{
+    display: flex;
+    justify-content:center;
+    height: 168px;
+}
+.images-img{
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    opacity: .5;
+    transition: .5s;
+}
+.images-img:hover{
+    flex: 1 1 242px;
+    opacity: 1;
 }

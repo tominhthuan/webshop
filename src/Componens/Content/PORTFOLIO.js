@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class PORTFOLIO extends Component {
-    render(){
+    render() {
         return (
             <div>
                 <div className='header-callout'>
@@ -12,6 +12,14 @@ class PORTFOLIO extends Component {
                             </div>
                         </div>
                     </section>
+                </div>
+                <div>
+                    <div className='images'>
+                        <img class='images-img' src='../assets/Images/photo1.jpg' alt='#' />
+                        <img class='images-img' src='../assets/Images/photo2.jpg' alt='#' />
+                        <img class='images-img' src='../assets/Images/photo3.jpg' alt='#' />
+                        <img class='images-img' src='../assets/Images/photo4.jpg' alt='#' />
+                    </div>
                 </div>
             </div>
         );

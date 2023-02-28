@@ -1,4 +1,20 @@
 import React, { Component } from 'react'
+import PortfolioIMG from '../PortfolioIMG';
+
+const pictures = [
+    {
+        url: '../assets/Images/photo1.jpg'
+    },
+    {
+        url: '../assets/Images/photo2.jpg'
+    },
+    {
+        url: '../assets/Images/photo3.jpg'
+    },
+    {
+        url: '../assets/Images/photo4.jpg'
+    },
+];
 
 class PORTFOLIO extends Component {
     render() {
@@ -15,10 +31,22 @@ class PORTFOLIO extends Component {
                 </div>
                 <div>
                     <div className='images'>
-                        <img class='images-img' src='../assets/Images/photo1.jpg' alt='#' />
-                        <img class='images-img' src='../assets/Images/photo2.jpg' alt='#' />
-                        <img class='images-img' src='../assets/Images/photo3.jpg' alt='#' />
-                        <img class='images-img' src='../assets/Images/photo4.jpg' alt='#' />
+                        {
+                            pictures.map((item) => (
+                                <PortfolioIMG
+                                    data={item.url}
+                                />
+                            ))
+                        }
+                    </div>
+                    <div className='images'>
+                        {
+                            pictures.map((item) => (
+                                <PortfolioIMG
+                                    data={item.u}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
             </div>

@@ -13,6 +13,11 @@ import Content from './Componens/Content/Content';
 import BLOG from './Componens/Content/BLOG';
 import './Componens/Content/StyleContent/StyleContent.css';
 import PORTFOLIO from './Componens/Content/PORTFOLIO';
+import PageImage from './Componens/Content/PageImage';
+
+//footer
+import Footer from './Componens/Footer/Footer';
+import './Componens/Footer/css/Footer.css';
 
 class App extends Component {
   render() {
@@ -25,8 +30,10 @@ class App extends Component {
               <Route index element={<Content />} />
               <Route path="/blog" element={<BLOG />} />
               <Route path="/portfolio" element={<PORTFOLIO />} />
+              <Route path="/pageimage" element={<PageImage />} />
             </Route>
           </Routes>
+          <Footer />
         </div>
       </React.Fragment>
 

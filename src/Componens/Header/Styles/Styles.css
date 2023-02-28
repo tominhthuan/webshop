@@ -28,6 +28,8 @@ li {
     justify-content: space-around;
     
 }
+
+
 .nav-links a {
     color: #666;
 }
@@ -39,11 +41,13 @@ li {
     cursor: pointer;
     padding: 9px;
     white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+    
 }
+
+.fa-menu1{
+    display: flex;
+}
+
 .menu {
     display: flex;
     font-size: 13px;
@@ -51,7 +55,7 @@ li {
 }
  
 .menu li {
-    position: relative;
+    
 }
 
 .menu a {
@@ -73,64 +77,98 @@ li {
     color: #4c4c4c;
     padding: 15px 24px;
 }
-#checkbox_toggle{
-    display: none;
-}
+.fa-solid{
+        display: none;
+    }
 
-.hamburger {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+.fa-angle-down{
+    display: inline;
+    padding: 18px 10px;
 }
-
-.hamburger-line{
-    background-color: #000;
+.fa-magnifying-glass{
     display: block;
-    height: 3px;
-    position: relative;
-    width: 28px;
+    padding: 17px 15px;
 }
-
-.hamburger-line::before,
-.hamburger-line::after{
-    background-color: #000;
-    content: "";
-    display: block;
+.fa-magnifying-glass:hover{
+    color: #5234f9;
+}
+.search{
+    
+}
+.search-box{
     position: absolute;
-    transform: 0.3s all ease;
-    width: 100%;
-    height: 100%;
-}
-.hamburger-line::before{
-    top:7px;
-}
-.hamburger-line::after{
-    top:-7px;
+    display: none;
+    background-color: azure;
+    padding: 8px;
+    top: 49px;
+    right: 88px;
+    border-radius: 8px;
+    box-shadow: 8px 7px 7px rgb(0 0 0 / 20%);
 }
 @media (max-width: 768px){
     .menu{
-        display: none;
+        flex-direction: column;
+        /*position:fixed;
+        *display: none;*
         flex-direction: column;
         text-align: center;
         z-index: 10;
-    }
-    /*.menu{
-        display: block;
-        max-height: 0;
-        overflow: hidden;
-        position: absolute;
-        border-top: 3px solid #fff;
+        top:45px;
+        right: -200px;
+        box-shadow: 0px 0px 7px 0px;
+        transition: right 0.3s;
+        background-color: #fff;
+    */}
+    .fa-menu1{
+        position:fixed;
+        flex-direction: column;
         text-align: center;
-        right: 0px;
-        left: 0px;
-        margin-top: 20px;
+        z-index: 10;
+        top:45px;
+        right: -200px;
+        box-shadow: 0px 0px 7px 0px;
+        transition: right 0.3s;
+        background-color: #fff;
+    }
+    .nav-links:hover .fa-menu1{
+        display: flex;
+        right: 12px;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: flex-end;
+        position:relative;
+    }
+    .menu .submenu2,
+    .menu .submenu{
+        right: 146px;
+        top: 0px;
+    }
+.menu li:hover .submenu2{
+    display:block;
+    top:314px;
+}
+.menu li:hover .submenu {
+    display: block;
+    top:236px;
+}
+    .fa-solid{
+        display: block;
+        
+        cursor: pointer;
+    }
+    .fa-bars{
+        padding: 17px;
+    }
+    .fa-angle-down{
+        display: none;
+    }
+    .fa-magnifying-glass{
         
     }
-    
-*/
-    .hamburger{
-        display: block;
-        margin-right: 20px;
+    .search-box{
+        top: 441px;
+    right: 142px;
     }
 }
 .menu .submenu{
@@ -140,7 +178,7 @@ li {
     box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
     padding: 0px;
     list-style: none;
-
+    top: 49px
 }
 .submenu li a {
     padding: 6px 19px;
@@ -178,10 +216,10 @@ li {
 .menu .submenu3 {
     display: none;
     min-width: 127px;
-    padding-left: 20px;
+    padding-right: 20px;
     position: absolute;
     box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
-    left: 124px;
+    right: 124px;
     top: 0; 
     
 }
@@ -195,6 +233,7 @@ li {
     /*margin-top: 15px;*/
     list-style: none;
     background-color:azure;
+    top: 49px;
 }
 .submenu,
 .submenu2 li  {
@@ -211,3 +250,22 @@ li {
     font-weight: 500;
 
 }
+
+
+
+.search:hover .search-box{
+    display: flex;
+}
+.ipt{
+    border-radius: 8px;
+    border: 5px;
+}
+.btn-search{
+    margin-left: 10px;
+    border: 5px;
+    padding: 9px 10px;
+    color: beige;
+    background-color: blueviolet;
+    border-radius: 8px;
+}
+

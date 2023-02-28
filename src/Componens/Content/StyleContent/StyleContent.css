@@ -45,6 +45,15 @@ a {
 p {
     font-weight: 400;
 }
+p{
+    margin-bottom: 24px;
+    margin-top: 0;
+    padding: 0;
+}
+
+strong{
+    font-weight: 700;
+}
 
 h1 {
     color: #fff;
@@ -53,6 +62,13 @@ h1 {
     font-weight: 500;
     letter-spacing: 2px;
     white-space: nowrap;
+}
+h5{
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 400;
+    color: #0e1015;
+    margin-bottom: 24px;
 }
 
 .thuanham {
@@ -486,8 +502,7 @@ h4 {
     flex-direction: column;
     align-items: flex-start;
 }
-.entry-content > p {
-    margin-bottom: 15px;
+.entry-content  p {
     font-weight: 400;
     font-size: 14px;
     color:#8c979e;
@@ -621,4 +636,10 @@ h12 {
 .images-img:hover{
     flex: 1 1 242px;
     opacity: 1;
+}
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
 }

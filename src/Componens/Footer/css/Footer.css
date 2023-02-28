@@ -1,0 +1,43 @@
+a{
+    font-weight: 600;
+}
+.footer{
+    background-color: #383d3d;
+}
+.container-footer{
+    padding: 64px 0px;
+}
+.row-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 99px;
+}
+.footer-credits{
+    flex: 2;
+}
+.footer-credits{
+    color: #fff;
+}
+.footer-credits a{
+    color: #fefefe;
+    opacity: 0.8;
+}
+.footer-credits a:hover{
+    color: #5234f9; 
+}
+.col-sm-6{
+    flex: 1;
+
+}
+.social-icons ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social-list li a i:hover {
+     color: #5234f9;
+}
+.fa-brands{
+    color:#fff
+}
